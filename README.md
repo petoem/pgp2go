@@ -1,2 +1,2 @@
 # pgp2go
-encrypt messages using pgp in your browser
+encrypt messages in your browser using pgp

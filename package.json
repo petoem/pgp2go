@@ -1,0 +1,20 @@
+{
+  "name": "pgp2go",
+  "version": "1.0.0",
+  "private": true,
+  "description": "encrypt messages in your browser using pgp",
+  "main": "src/app.js",
+  "repository": "git@github.com:petoem/pgp2go.git",
+  "author": "Michael Petö <michael@petoe.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -p --devtool source-map --config webpack.config.js",
+    "dev": "webpack --watch --devtool source-map --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "kbpgp": "^2.0.67"
+  }
+}
