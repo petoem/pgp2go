@@ -19,13 +19,13 @@ let plugins = [
             collapseWhitespace: true,
             conservativeCollapse: true
         } : false,
-        hash: true,
+        hash: false,
         cache: false,
         showErrors: false
     }),
     new HtmlWebpackIncludeAssetsPlugin({
         append: true,
-        hash: true,
+        hash: false,
         assets: [
             'style.css'
         ]
