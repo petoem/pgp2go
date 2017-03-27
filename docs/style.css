@@ -4,13 +4,15 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
-h1, h5 {
+h1,
+h5 {
     font-family: 'Share Tech Mono', monospace;
     font-size: 35px;
     text-align: center;
 }
 
-h5, a {
+h5,
+a {
     color: #3C3C3C;
     font-size: 12px;
     text-decoration: none;
@@ -139,5 +141,11 @@ fieldset * {
     }
     100% {
         background-position: 0% 50%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        max-width: 92%;
     }
 }
