@@ -8,13 +8,23 @@
   "author": "Michael Petö <michael@petoe.me>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -p --devtool source-map --config webpack.config.js",
-    "dev": "webpack --watch --devtool source-map --config webpack.config.js"
+    "gh-deploy": "cross-env NODE_ENV=production OUT_DIR=./docs webpack -p --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production OUT_DIR=./build webpack -p --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development OUT_DIR=./build webpack --watch --devtool source-map --config webpack.config.js"
   },
   "devDependencies": {
-    "webpack": "^2.3.2"
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.2.4",
+    "html-webpack-include-assets-plugin": "^0.0.4",
+    "html-webpack-plugin": "^2.28.0",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2#harmony",
+    "uglifyjs-webpack-plugin": "^0.3.1",
+    "webpack": "^2.3.2",
+    "webpack-subresource-integrity": "^0.9.0"
   },
   "dependencies": {
-    "kbpgp": "^2.0.67"
+    "kbpgp": "^2.0.67",
+    "randomcolor": "^0.4.4",
+    "superagent": "^3.5.2"
   }
 }
