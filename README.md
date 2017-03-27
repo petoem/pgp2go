@@ -2,7 +2,9 @@
 [![license](https://img.shields.io/github/license/petoem/pgp2go.svg?style=flat-square)](https://github.com/petoem/pgp2go/blob/master/LICENSE)  
 
 ## About
-[`pgp2go`](https://petoem.github.io/pgp2go/) is a small webpage that allows you to encrypt a message using [kbpgp.js](https://github.com/keybase/kbpgp) inside your browser.  
+[`pgp2go`](https://github.com/petoem/pgp2go) is a small webpage that allows you to encrypt a message using [kbpgp.js](https://github.com/keybase/kbpgp) inside your browser.  
+
+[Try it out here!](https://petoem.github.io/pgp2go/)
 
 ## Screenshot
 ![pgp2go Screenshot](/screenshot.jpg?raw=true "pgp2go webpage screenshot")
