@@ -914,6 +914,10 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
+iced-error@>=0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/iced-error/-/iced-error-0.0.10.tgz#f82e4368f79f4afdf3ed20375acc28a8702809e8"
+
 iced-error@>=0.0.8, iced-error@>=0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/iced-error/-/iced-error-0.0.9.tgz#c7c3057614c0a187d96b3d18c6d520e6b872ed37"
@@ -1122,14 +1126,14 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-kbpgp@^2.0.67:
-  version "2.0.67"
-  resolved "https://registry.yarnpkg.com/kbpgp/-/kbpgp-2.0.67.tgz#3b2be102ff5def8976b71c6a1d84ea8706a187db"
+kbpgp@^2.0.70:
+  version "2.0.70"
+  resolved "https://registry.yarnpkg.com/kbpgp/-/kbpgp-2.0.70.tgz#48638be2a10cad3cdb6371ea5b127b45419d69be"
   dependencies:
     bn "^1.0.0"
     bzip-deflate "^1.0.0"
     deep-equal ">=0.2.1"
-    iced-error ">=0.0.9"
+    iced-error ">=0.0.10"
     iced-lock "^1.0.2"
     iced-runtime "^1.0.3"
     keybase-ecurve "^1.0.0"
