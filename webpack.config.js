@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'production') {
     plugins.push(new UglifyJSPlugin({
         mangle: false,
         sourceMap: false,
-        compress: true
+        compress: false
     }));
     plugins.push(new SriPlugin({
         hashFuncNames: ['sha256', 'sha384'],
