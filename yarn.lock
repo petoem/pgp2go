@@ -1128,9 +1128,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-kbpgp@^2.0.70:
-  version "2.0.70"
-  resolved "https://registry.yarnpkg.com/kbpgp/-/kbpgp-2.0.70.tgz#48638be2a10cad3cdb6371ea5b127b45419d69be"
+kbpgp@^2.0.72:
+  version "2.0.72"
+  resolved "https://registry.yarnpkg.com/kbpgp/-/kbpgp-2.0.72.tgz#6060890d565e8667f6b513cd834ac0b47c68c31b"
   dependencies:
     bn "^1.0.0"
     bzip-deflate "^1.0.0"
@@ -2011,7 +2011,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
-uglify-js@^2.8.5, "uglify-js@git://github.com/mishoo/UglifyJS2#harmony", uglify-js@mishoo/UglifyJS2#harmony, uglify-js@~2.8.22:
+uglify-js@^2.8.5, uglify-js@mishoo/UglifyJS2#harmony, uglify-js@~2.8.22:
   version "2.8.22"
   resolved "https://codeload.github.com/mishoo/UglifyJS2/tar.gz/73d6438773a40aa5aa06354781334af79a67e42d"
   dependencies:

@@ -23,7 +23,7 @@
     "webpack-subresource-integrity": "^0.9.0"
   },
   "dependencies": {
-    "kbpgp": "^2.0.70",
+    "kbpgp": "^2.0.72",
     "randomcolor": "^0.5.2",
     "superagent": "^3.5.2"
   }
