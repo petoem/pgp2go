@@ -8,23 +8,27 @@
   "author": "Michael Petö <michael@petoe.me>",
   "license": "MIT",
   "scripts": {
-    "gh-deploy": "cross-env NODE_ENV=production OUT_DIR=./docs webpack -p --config webpack.config.js",
-    "build": "cross-env NODE_ENV=production OUT_DIR=./build webpack -p --config webpack.config.js",
+    "gh-deploy": "cross-env NODE_ENV=production OUT_DIR=./docs webpack --progress -p --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production OUT_DIR=./build webpack --progress -p --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development OUT_DIR=./build webpack --watch --devtool source-map --config webpack.config.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.3.1",
     "cross-env": "^5.1.3",
     "html-webpack-include-assets-plugin": "^1.0.2",
-    "html-webpack-plugin": "^2.30.1",
-    "uglify-js": "^3.3.9",
-    "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack": "^3.10.0",
-    "webpack-subresource-integrity": "^1.0.3"
+    "html-webpack-plugin": "^3.2.0",
+    "uglify-js": "^3.4.9",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-subresource-integrity": "^1.1.0-rc.6"
   },
   "dependencies": {
-    "kbpgp": "^2.0.76",
+    "kbpgp": "^2.0.80",
     "randomcolor": "^0.5.3",
-    "superagent": "^3.8.2"
+    "superagent": "^4.0.0-beta.5"
   }
 }

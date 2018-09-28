@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -35,9 +34,9 @@ let plugins = [
 if (process.env.NODE_ENV === 'production') {
     plugins.push(new UglifyJSPlugin({
         uglifyOptions: {
-            mangle: false,
+            mangle: true,
             sourceMap: false,
-            compress: false
+            compress: true
         }
     }));
     plugins.push(new SriPlugin({
@@ -53,5 +52,16 @@ module.exports = {
         filename: (process.env.NODE_ENV === 'production') ? 'bundle.[hash].js' : 'bundle.js',
         crossOriginLoading: 'anonymous'
     },
-    plugins: plugins
+    plugins: plugins,
+    module: {
+        rules: [{
+            test: /\.m?js$/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }]
+    }
 }
