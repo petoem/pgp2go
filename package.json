@@ -1,6 +1,6 @@
 {
   "name": "pgp2go",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "private": true,
   "description": "encrypt messages in your browser using pgp",
   "main": "src/app.js",
@@ -13,21 +13,21 @@
     "dev": "cross-env NODE_ENV=development OUT_DIR=./build webpack --watch --devtool source-map --config webpack.config.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.3",
-    "cross-env": "^5.1.3",
-    "html-webpack-include-assets-plugin": "^1.0.2",
+    "cross-env": "^5.2.0",
+    "html-webpack-include-assets-plugin": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "uglify-js": "^3.4.9",
-    "uglifyjs-webpack-plugin": "^2.0.1",
+    "uglify-js": "^3.6.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "webpack": "^4.34.0",
-    "webpack-cli": "^3.1.1",
-    "webpack-subresource-integrity": "^1.1.0-rc.6"
+    "webpack-cli": "^3.3.4",
+    "webpack-subresource-integrity": "^1.3.2"
   },
   "dependencies": {
-    "kbpgp": "^2.0.80",
+    "kbpgp": "^2.1.2",
     "randomcolor": "^0.5.4",
     "superagent": "^5.0.8"
   }
