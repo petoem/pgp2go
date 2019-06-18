@@ -29,6 +29,6 @@
   "dependencies": {
     "kbpgp": "^2.1.2",
     "randomcolor": "^0.5.4",
-    "superagent": "^5.0.8"
+    "superagent": "^5.1.0"
   }
 }
