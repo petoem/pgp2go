@@ -2,7 +2,7 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+const  HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const SriPlugin = require('webpack-subresource-integrity');
 
 let plugins = [
@@ -22,13 +22,7 @@ let plugins = [
         cache: false,
         showErrors: false
     }),
-    new HtmlWebpackIncludeAssetsPlugin({
-        append: true,
-        hash: false,
-        assets: [
-            'style.css'
-        ]
-    })
+    new HtmlWebpackTagsPlugin({ tags: ['style.css'], append: true, useHash: false })
 ];
 
 if (process.env.NODE_ENV === 'production') {
