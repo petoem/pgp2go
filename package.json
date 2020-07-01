@@ -20,7 +20,7 @@
     "cross-env": "^7.0.2",
     "html-webpack-plugin": "^4.3.0",
     "html-webpack-tags-plugin": "^2.0.17",
-    "uglify-js": "^3.9.4",
+    "uglify-js": "^3.10.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
