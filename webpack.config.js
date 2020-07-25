@@ -6,10 +6,14 @@ const  HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const SriPlugin = require('webpack-subresource-integrity');
 
 let plugins = [
-    new CopyWebpackPlugin([{
-        from: 'src/style.css',
-        to: 'style.css'
-    }]),
+    new CopyWebpackPlugin({
+        patterns: [
+            {
+                from: 'src/style.css',
+                to: 'style.css'
+            }
+        ]
+    }),
     new HtmlWebpackPlugin({
         filename: 'index.html',
         template: './src/index.html',
