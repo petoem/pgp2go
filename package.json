@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "kbpgp": "^2.1.15",
-    "randomcolor": "^0.5.4",
+    "randomcolor": "^0.6.2",
     "superagent": "^5.3.1"
   }
 }
