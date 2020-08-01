@@ -22,7 +22,7 @@
     "html-webpack-tags-plugin": "^2.0.17",
     "uglify-js": "^3.10.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-subresource-integrity": "^1.4.1"
   },
