@@ -1,4 +1,4 @@
-# pgp2go
+# [Archived] pgp2go
 [![license](https://img.shields.io/github/license/petoem/pgp2go.svg?style=flat-square)](https://github.com/petoem/pgp2go/blob/master/LICENSE)  
 
 ## About
